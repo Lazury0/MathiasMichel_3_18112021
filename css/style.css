@@ -1,0 +1,31 @@
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.title h1{
+    font-family: "Shrikhand", cursive;
+    font-weight: 400;
+    font-size: 80px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(to bottom, #cecece 0%, #ECECEC 18%, #ececec 100%);
+}
+.search-bar{
+    font-size: 40px;
+    font-weight: 500;
+    background-color:transparent;
+    border: none;
+    width: 276px;
+
+}
+.search::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 43px;
+    content: "\f3c5";
+    margin: 10px 40px;
+}
