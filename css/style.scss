@@ -1,11 +1,12 @@
-@import "_header";
-@import "_body";
-@import "_footer";
-
-$primaire: #9356DC;
-$secondaire: #FF79DA;
-$tertiaire: #99E2D0;
+$primaire:#9356DC;
+$secondaire:#FF79DA;
+$tertiaire:#99E2D0;
 
 *{
     font-family: "Roboto", cursive;
 }
+@import "./scss/header";
+@import "./scss/body";
+@import "./scss/menu-restaurant";
+@import "./scss/footer";
+@import "./scss/menus/la-palette-du-gout.scss";

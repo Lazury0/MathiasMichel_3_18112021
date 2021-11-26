@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC,CAAC,CAAA;EACJ,SAAS,EAAE,KAAK;CAEnB",
+    "sources": [
+        "la-palette-du-gout.scss"
+    ],
+    "names": [],
+    "file": "la-palette-du-gout.css"
+}

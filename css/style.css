@@ -1,3 +1,7 @@
+* {
+  font-family: "Roboto", cursive;
+}
+
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,6 +16,7 @@
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 80px;
+  margin-bottom: 30px;
 }
 
 .search {
@@ -38,11 +43,12 @@
   width: 276px;
 }
 
-.search::before {
+.search:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 43px;
   content: "\f3c5";
+  color: #414141;
   margin: 35px 40px 35px -50px;
 }
 
@@ -57,16 +63,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.explore .title {
-  margin-top: 80px;
+  background-color: #F6F6F6;
+  padding-bottom: 150px;
 }
 
 .explore h2 {
+  width: 70%;
   font-size: 60px;
   font-weight: 800;
   display: -webkit-box;
@@ -75,13 +77,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
+  margin: 100px 0 0 0;
 }
 
 .explore p {
   font-size: 50px;
+  text-align: center;
+  margin: 60px 0;
+  font-weight: 300;
 }
 
 .explore button {
@@ -99,15 +103,264 @@
 }
 
 .functioning {
-  margin-top: 230px;
+  margin-top: 130px;
 }
 
 .functioning h2 {
-  font-size: 60px;
+  font-size: 65px;
   font-weight: 800;
+  margin-left: 40px;
 }
 
-* {
-  font-family: "Roboto", cursive;
+.functioning ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.functioning-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 42px;
+  font-weight: 600;
+  list-style: none;
+  height: 180px;
+  width: 850px;
+  background-color: #F6F6F6;
+  border-radius: 50px;
+  margin: 30px 0;
+  text-align: center;
+  -webkit-box-shadow: 0px 12px 20px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 12px 20px 4px rgba(0, 0, 0, 0.15);
+}
+
+.functioning-button p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  left: 170px;
+}
+
+.functioning-button .numb {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: -20px;
+  background-color: #9356DC;
+  color: white;
+  font-weight: lighter;
+  border-radius: 50%;
+  font-size: 35px;
+  width: 55px;
+  height: 55px;
+  margin: 60px 0;
+}
+
+.functioning-button i {
+  padding-top: 60px;
+  position: absolute;
+  right: 750px;
+  color: grey;
+  font-size: 50px;
+}
+
+.functioning-button:hover {
+  background-color: #F5EDFF;
+}
+
+.functioning-button:hover .fas {
+  color: #9356DC;
+}
+
+.menu-restaurant {
+  padding: 80px 0 80px 0;
+  background-color: #F6F6F6;
+}
+
+.menu-restaurant h2 {
+  padding-left: 35px;
+  font-size: 65px;
+}
+
+.menu-restaurant .card-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 12px 20px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 12px 20px 4px rgba(0, 0, 0, 0.1);
+  width: 900px;
+  height: 680px;
+  margin-bottom: 50px;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-bottom {
+  position: relative;
+  top: 430px;
+  background-color: #fff;
+  width: 900px;
+  height: 200px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.card-bottom h3 {
+  padding: 40px 0 0 30px;
+  font-size: 50px;
+}
+
+.card-bottom p {
+  font-size: 50px;
+  margin: -45px 0 0 30px;
+}
+
+.card-bottom .fa-heart {
+  font-size: 70px;
+  font-weight: 200;
+}
+
+.menilmontant {
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+.menilmontant span {
+  font-size: 40px;
+  position: absolute;
+  background-color: #99E2D0;
+  color: #008766;
+  width: 200px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  border-radius: 5px;
+  top: 2430px;
+  left: 700px;
+}
+
+.charonne {
+  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+
+.charonne span {
+  font-size: 40px;
+  position: absolute;
+  background-color: #99E2D0;
+  color: #008766;
+  width: 200px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  border-radius: 5px;
+  top: 3160px;
+  left: 700px;
+}
+
+.cite-rouge {
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+
+.folie-mericourt {
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+footer {
+  background-color: #353535;
+  height: 400px;
+  color: white;
+}
+
+footer h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 200;
+  font-size: 40px;
+  padding: 40px 0 0 40px;
+  margin: 0;
+}
+
+footer ul {
+  font-size: 31px;
+  list-style: none;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li {
+  margin: 15px 0;
+}
+
+footer ul .fa-utensils {
+  margin: 0 33px 0 0;
+}
+
+footer ul .fa-hands-helping {
+  margin: 0 20px 0 0;
+}
+
+.title i {
+  font-size: 50px;
 }
 /*# sourceMappingURL=style.css.map */
