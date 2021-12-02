@@ -1,0 +1,51 @@
+.functioning-button{
+    display: flex;
+    font-size: 42px;
+    font-weight: 600;
+    list-style: none;
+    height: 180px;
+    width: 850px;
+    background-color: #F6F6F6;
+    border-radius: 50px;
+    margin: 30px 0;
+    text-align: center;
+    box-shadow: 0px 12px 20px 4px rgba(0,0,0,0.15);
+    .functioning-text{
+        display:flex;
+        align-items: center;
+        position: relative;
+        left: 50px;
+    }
+    :before{
+        content: '';
+
+    }
+    &:nth-child(1):before{
+        content: '1';
+        @include buttons
+      }
+    &:nth-child(2):before{
+        content: '2';
+        @include buttons
+        
+      }
+    &:nth-child(3):before{
+        content: '3';
+        @include buttons
+      }
+    i{
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 5%;
+        color: grey;
+        font-size: 50px;
+        width: 100px;
+    }
+    &:hover{
+        background-color: #F5EDFF;
+        .fas{
+            color: $primaire
+        }
+    }
+}

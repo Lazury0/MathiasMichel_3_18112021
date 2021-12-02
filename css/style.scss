@@ -1,12 +1,14 @@
-$primaire:#9356DC;
-$secondaire:#FF79DA;
-$tertiaire:#99E2D0;
-
-*{
-    font-family: "Roboto", cursive;
-}
-@import "./scss/header";
-@import "./scss/body";
-@import "./scss/menu-restaurant";
-@import "./scss/footer";
-@import "./scss/menus/la-palette-du-gout.scss";
+@import "./scss/base/typography";
+@import "./scss/layout/header";
+@import "./scss/layout/body";
+@import "./scss//layout/menu-restaurant";
+@import "./scss/layout/footer";
+@import "./scss/components/buttons";
+@import "./scss/components/title";
+@import "./scss/helpers/functions";
+@import "./scss/helpers/mixins";
+@import "./scss/helpers/variables";
+@import "./scss/pages/a-la-francaise";
+@import "./scss/pages/la-note-enchantee";
+@import "./scss/pages/la-palette-du-gout";
+@import "./scss/pages//le-delice-des-sens";

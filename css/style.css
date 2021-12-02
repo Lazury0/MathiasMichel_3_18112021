@@ -2,23 +2,6 @@
   font-family: "Roboto", cursive;
 }
 
-.title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 40px;
-}
-
-.title h1 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
-  font-size: 80px;
-  margin-bottom: 30px;
-}
-
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,66 +111,6 @@
           justify-content: center;
 }
 
-.functioning-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 42px;
-  font-weight: 600;
-  list-style: none;
-  height: 180px;
-  width: 850px;
-  background-color: #F6F6F6;
-  border-radius: 50px;
-  margin: 30px 0;
-  text-align: center;
-  -webkit-box-shadow: 0px 12px 20px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 12px 20px 4px rgba(0, 0, 0, 0.15);
-}
-
-.functioning-button p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  left: 170px;
-}
-
-.functioning-button .numb {
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  left: -20px;
-  background-color: #9356DC;
-  color: white;
-  font-weight: lighter;
-  border-radius: 50%;
-  font-size: 35px;
-  width: 55px;
-  height: 55px;
-  margin: 60px 0;
-}
-
-.functioning-button i {
-  padding-top: 60px;
-  position: absolute;
-  right: 750px;
-  color: grey;
-  font-size: 50px;
-}
-
-.functioning-button:hover {
-  background-color: #F5EDFF;
-}
-
-.functioning-button:hover .fas {
-  color: #9356DC;
-}
-
 .menu-restaurant {
   padding: 80px 0 80px 0;
   background-color: #F6F6F6;
@@ -211,7 +134,29 @@
           align-items: center;
 }
 
-.card {
+.menu-restaurant .card-menu .card-bottom {
+  position: relative;
+  top: 430px;
+  background-color: #fff;
+  width: 900px;
+  height: 200px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.menu-restaurant .card-menu .card-bottom h3 {
+  padding: 40px 0 0 30px;
+  font-size: 50px;
+}
+
+.menu-restaurant .card-menu .card-bottom p {
+  font-size: 50px;
+  margin: -45px 0 0 30px;
+}
+
+.menilmontant {
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-position: 0px -200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,100 +173,131 @@
   width: 900px;
   height: 680px;
   margin-bottom: 50px;
-  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: white;
 }
 
-.card a {
+.menilmontant a {
   text-decoration: none;
   color: black;
 }
 
-.card-bottom {
-  position: relative;
-  top: 430px;
-  background-color: #fff;
-  width: 900px;
-  height: 200px;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-}
-
-.card-bottom h3 {
-  padding: 40px 0 0 30px;
-  font-size: 50px;
-}
-
-.card-bottom p {
-  font-size: 50px;
-  margin: -45px 0 0 30px;
-}
-
-.card-bottom .fa-heart {
-  font-size: 70px;
-  font-weight: 200;
-}
-
-.menilmontant {
-  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-}
-
-.menilmontant span {
+.menilmontant:after {
+  content: 'Nouveau';
+  width: 200px;
+  height: 60px;
   font-size: 40px;
-  position: absolute;
+  position: relative;
+  top: -210px;
+  left: 300px;
   background-color: #99E2D0;
   color: #008766;
-  width: 200px;
-  height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 10px 0px 0px 40px;
   font-weight: 500;
   border-radius: 5px;
-  top: 2430px;
-  left: 700px;
 }
 
 .charonne {
   background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-}
-
-.charonne span {
-  font-size: 40px;
-  position: absolute;
-  background-color: #99E2D0;
-  color: #008766;
-  width: 200px;
-  height: 80px;
+  background-position: 0px -400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 12px 20px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 12px 20px 4px rgba(0, 0, 0, 0.1);
+  width: 900px;
+  height: 680px;
+  margin-bottom: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.charonne a {
+  text-decoration: none;
+  color: black;
+}
+
+.charonne:after {
+  content: 'Nouveau';
+  width: 200px;
+  height: 60px;
+  font-size: 40px;
+  position: relative;
+  top: -210px;
+  left: 300px;
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 10px 0px 0px 40px;
   font-weight: 500;
   border-radius: 5px;
-  top: 3160px;
-  left: 700px;
 }
 
 .cite-rouge {
   background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-position: 0px -180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 12px 20px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 12px 20px 4px rgba(0, 0, 0, 0.1);
+  width: 900px;
+  height: 680px;
+  margin-bottom: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.cite-rouge a {
+  text-decoration: none;
+  color: black;
 }
 
 .folie-mericourt {
   background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-position: 0px -180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 12px 20px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 12px 20px 4px rgba(0, 0, 0, 0.1);
+  width: 900px;
+  height: 680px;
+  margin-bottom: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.folie-mericourt a {
+  text-decoration: none;
+  color: black;
 }
 
 footer {
@@ -360,7 +336,254 @@ footer ul .fa-hands-helping {
   margin: 0 20px 0 0;
 }
 
-.title i {
+.functioning-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 42px;
+  font-weight: 600;
+  list-style: none;
+  height: 180px;
+  width: 850px;
+  background-color: #F6F6F6;
+  border-radius: 50px;
+  margin: 30px 0;
+  text-align: center;
+  -webkit-box-shadow: 0px 12px 20px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 12px 20px 4px rgba(0, 0, 0, 0.15);
+}
+
+.functioning-button .functioning-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  left: 50px;
+}
+
+.functioning-button :before {
+  content: '';
+}
+
+.functioning-button:nth-child(1):before {
+  content: '1';
+  position: relative;
+  left: -30px;
+  background-color: #9356DC;
+  color: white;
+  font-weight: lighter;
+  border-radius: 50%;
+  font-size: 35px;
+  width: 55px;
+  height: 55px;
+  margin: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.functioning-button:nth-child(2):before {
+  content: '2';
+  position: relative;
+  left: -30px;
+  background-color: #9356DC;
+  color: white;
+  font-weight: lighter;
+  border-radius: 50%;
+  font-size: 35px;
+  width: 55px;
+  height: 55px;
+  margin: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.functioning-button:nth-child(3):before {
+  content: '3';
+  position: relative;
+  left: -30px;
+  background-color: #9356DC;
+  color: white;
+  font-weight: lighter;
+  border-radius: 50%;
+  font-size: 35px;
+  width: 55px;
+  height: 55px;
+  margin: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.functioning-button i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  left: 5%;
+  color: grey;
   font-size: 50px;
+  width: 100px;
+}
+
+.functioning-button:hover {
+  background-color: #F5EDFF;
+}
+
+.functioning-button:hover .fas {
+  color: #9356DC;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.title h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.title .fa-arrow-left {
+  font-size: 50px;
+  color: #383838;
+  position: relative;
+  top: 80px;
+  left: -170px;
+}
+
+header img {
+  width: 102%;
+  height: 100%;
+  margin-left: -8px;
+}
+
+.menu {
+  background-color: #f2f2f2;
+  position: relative;
+  z-index: 1;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  width: 102%;
+  height: 100%;
+  margin: -200px 0 0 -8px;
+}
+
+.menu h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 80px;
+  padding: 80px 0 0 50px;
+}
+
+.menu h2 {
+  font-size: 45px;
+  font-weight: 300;
+  padding-left: 50px;
+}
+
+.menu hr {
+  width: 105px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #99E2D0;
+  position: relative;
+  right: 380px;
+  top: -20px;
+}
+
+.menu .dish {
+  position: relative;
+  background-color: #fff;
+  width: 900px;
+  height: 160px;
+  border-radius: 40px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 70px;
+}
+
+.menu .dish h3 {
+  margin: 0;
+  padding: 25px 0 0 30px;
+  font-size: 50px;
+}
+
+.menu .dish h4 {
+  font-size: 40px;
+  margin: -60px 0 0 30px;
+  font-weight: 300;
+}
+
+.menu .dish span {
+  font-weight: 600;
+  font-size: 40px;
+  margin: -120px 0 0 780px;
+}
+
+.menu .sub-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu button {
+  margin: 50px 0 100px 0;
+  color: white;
+  font-weight: 400;
+  font-size: 45px;
+  height: 130px;
+  width: 450px;
+  border: none;
+  border-radius: 60px;
+  background: #9356dc;
+  background: linear-gradient(354deg, #9356dc 0%, #ff79da 100%);
+  -webkit-box-shadow: 0px 10px 23px 4px rgba(0, 0, 0, 0.27);
+  box-shadow: 0px 10px 23px 4px rgba(0, 0, 0, 0.27);
 }
 /*# sourceMappingURL=style.css.map */

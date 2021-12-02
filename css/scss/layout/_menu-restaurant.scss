@@ -1,0 +1,60 @@
+@import "../helpers/mixins";
+
+.menu-restaurant {
+    padding: 80px 0 80px 0;
+    background-color: #F6F6F6;
+    h2{
+        padding-left: 35px;
+        font-size: 65px;
+    }
+    .card-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card-bottom{
+            position: relative;
+            top: 430px;
+            background-color: #fff;
+            width: 900px;
+            height: 200px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            h3{
+                padding: 40px 0 0 30px;
+                font-size: 50px;
+            }
+            p{
+                font-size: 50px;
+                margin: -45px 0 0 30px;
+            }
+        }
+    }
+}
+
+.menilmontant{
+    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-position: 0px -200px;
+    @include card;
+    &:after{
+        @include badge-new;
+        }
+
+}
+.charonne{
+    background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background-position: 0px -400px;
+    @include card;
+    &:after{
+        @include badge-new;
+        }
+}
+.cite-rouge{
+    background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-position: 0px -180px;
+    @include card;
+}
+.folie-mericourt{
+    background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    background-position: 0px -180px;
+    @include card;
+}
