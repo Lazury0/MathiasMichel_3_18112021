@@ -11,6 +11,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        a{
+            height: 100%;
+        }
         .card-bottom{
             position: relative;
             top: 430px;
