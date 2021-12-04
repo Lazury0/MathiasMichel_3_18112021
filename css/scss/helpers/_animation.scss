@@ -1,15 +1,31 @@
 // Heart
-.card-bottom {
-    i{
-        position: absolute;
-        bottom: 80px;
-        right: 50px;
-        font-size: 60px;
-        &:checked{
-            background: linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+@keyframes progress-heart {
+    0% {
+        transform: scale(0);
     }
-
+    24% {
+        transform: scale(.4);
+    }
+    46% {
+        transform: scale(.81);
+    }
+    64% {
+        transform: scale(1);
+    }
+    82% {
+        transform: scale(.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.card-menu {
+    position: relative;
+    @include heart
+}
+// Menus Heart
+.menu{
+    H1{
+        @include menu-heart        
+    }
 }
