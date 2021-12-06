@@ -143,3 +143,37 @@
                     -webkit-text-stroke: transparent 1px;
                 }
 }
+@mixin validation-button{
+        .dish{
+                .validation-button{
+                        position: absolute;
+                        right: 0px;
+                        background-color: $primaire;
+                        width: 0px;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        right: 0px;
+                        margin-left: 300px;
+                        transform-origin: bottom;
+                        border-top-right-radius: 40px;
+                        border-bottom-right-radius: 40px;
+                        &:hover{
+                                animation: validation 500ms ease-in-out 500ms;
+                                }
+                        i{
+                        color: white;
+                        transform: scale(0);
+                        width: 180px;
+                        height: 100%;
+                        font-size: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &:hover{
+                                animation: check-circle 500ms ease-in-out 500ms;
+                                }
+                        }
+                }
+        }
+}

@@ -587,7 +587,7 @@ footer ul .fa-hands-helping {
 
 .loading {
   position: fixed;
-  background-color: #7d807d;
+  background-color: white;
   width: 110%;
   height: 120vh;
   margin: -50px -50px;
@@ -619,15 +619,17 @@ footer ul .fa-hands-helping {
   top: -200px;
   font-family: "Shrikhand", serif;
   color: white;
+  -webkit-text-stroke: 1px black;
 }
 
 .loading span {
   position: fixed;
-  top: 100px;
+  top: 120px;
   text-align: center;
   width: 265px;
   font-size: 50px;
   color: white;
+  -webkit-text-stroke: 1px black;
 }
 
 .circle {
@@ -807,6 +809,168 @@ footer ul .fa-hands-helping {
   }
   100% {
     opacity: 0;
+  }
+}
+
+.menu :nth-child(2) {
+  -webkit-animation: menu 800ms 200ms ease-in-out backwards;
+          animation: menu 800ms 200ms ease-in-out backwards;
+}
+
+.menu :nth-child(3) {
+  -webkit-animation: menu 800ms 300ms ease-in-out backwards;
+          animation: menu 800ms 300ms ease-in-out backwards;
+}
+
+.menu :nth-child(5) {
+  -webkit-animation: menu 800ms 800ms ease-in-out backwards;
+          animation: menu 800ms 800ms ease-in-out backwards;
+}
+
+.menu :nth-child(6) {
+  -webkit-animation: menu 800ms 900ms ease-in-out backwards;
+          animation: menu 800ms 900ms ease-in-out backwards;
+}
+
+.menu :nth-child(7) {
+  -webkit-animation: menu 800ms 1000ms ease-in-out backwards;
+          animation: menu 800ms 1000ms ease-in-out backwards;
+}
+
+.menu :nth-child(8) {
+  -webkit-animation: menu 800ms 1100ms ease-in-out backwards;
+          animation: menu 800ms 1100ms ease-in-out backwards;
+}
+
+.menu :nth-child(9) {
+  -webkit-animation: menu 800ms 1200ms ease-in-out backwards;
+          animation: menu 800ms 1200ms ease-in-out backwards;
+}
+
+.menu :nth-child(10) {
+  -webkit-animation: menu 800ms 1300ms ease-in-out backwards;
+          animation: menu 800ms 1300ms ease-in-out backwards;
+}
+
+@-webkit-keyframes menu {
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes menu {
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.dish .validation-button {
+  position: absolute;
+  right: 0px;
+  background-color: #9356DC;
+  width: 0px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0px;
+  margin-left: 300px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.dish .validation-button:hover {
+  -webkit-animation: validation 500ms ease-in-out 500ms;
+          animation: validation 500ms ease-in-out 500ms;
+}
+
+.dish .validation-button i {
+  color: white;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  width: 180px;
+  height: 100%;
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dish .validation-button i:hover {
+  -webkit-animation: check-circle 500ms ease-in-out 500ms;
+          animation: check-circle 500ms ease-in-out 500ms;
+}
+
+@-webkit-keyframes validation {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 180px;
+  }
+}
+
+@keyframes validation {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 180px;
+  }
+}
+
+@-webkit-keyframes check-circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes check-circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 

@@ -32,7 +32,7 @@
 // Loading page
 .loading{
     position: fixed;
-    background-color: rgb(125, 128, 125);
+    background-color: rgb(255, 255, 255);
     width:110%;
     height:120vh;
     margin: -50px -50px;
@@ -55,15 +55,16 @@
         top: -200px;
         font-family: "Shrikhand", serif;
         color: white;
-
+        -webkit-text-stroke: 1px black;
     }
     span{
         position: fixed;
-        top:100px;
+        top:120px;
         text-align: center;    
         width: 265px;
         font-size: 50px;
-        color: rgb(255, 255, 255);
+        color: white;
+        -webkit-text-stroke: 1px black;
     }
 }
 .circle{
@@ -165,5 +166,68 @@
     }
     100%{
         opacity: 0;
+    }
+}
+// Apparition menus
+.menu{
+    :nth-child(2){
+    animation: menu 800ms 200ms ease-in-out backwards;
+    }
+    :nth-child(3){
+    animation: menu 800ms 300ms ease-in-out backwards;
+    }
+    // :nth-child(4){
+    // animation: menu 800ms 400ms ease-in-out backwards;
+    // }
+    :nth-child(5){
+    animation: menu 800ms 800ms ease-in-out backwards;
+    }
+    :nth-child(6){
+    animation: menu 800ms 900ms ease-in-out backwards;
+    }
+    :nth-child(7){
+    animation: menu 800ms 1000ms ease-in-out backwards;
+    }
+    :nth-child(8){
+    animation: menu 800ms 1100ms ease-in-out backwards;
+    }
+    :nth-child(9){
+    animation: menu 800ms 1200ms ease-in-out backwards;
+    }
+    :nth-child(10){
+    animation: menu 800ms 1300ms ease-in-out backwards;
+    }
+}
+@keyframes menu {
+    0% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+//   Validation boutton
+@include validation-button;
+
+@keyframes validation {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width:180px;
+    }
+}
+@keyframes check-circle {
+    0%{
+        transform: rotate(0deg);
+        transform: scale(0);
+    }
+    100%{
+        transform: rotate(180deg);
+        transform: scale(1);
     }
 }
