@@ -36,6 +36,14 @@ header img{
     }
 
     .dish{
+        .menu-item{
+            padding: 30px;
+        }
+        .price{
+                font-weight: 600;
+                font-size: 40px;
+                float: right;
+        }
         @include menu-card
     }
     .sub-card

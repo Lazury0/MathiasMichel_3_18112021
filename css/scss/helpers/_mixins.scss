@@ -73,37 +73,25 @@
         cursor: pointer;
         position: relative;
         background-color: #fff;
-        background-size: contain;
         width: 900px;
         height: auto;
         min-height: 160px;
         border-radius: 40px;
         margin-bottom: 40px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 70px;
+        // gap: 70px;
         h3{
                 margin: 0;
-                padding: 25px 0 0 30px;
                 font-size: 50px;
-                max-width: 750px;
                 word-break: keep-all;
             }
         h4{
+                margin: 0;
                 font-size: 40px;
-                margin: -60px 0 0 30px;
                 font-weight: 300;
-                max-width: 730px;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
             }
-        span{
-                font-weight: 600;
-                font-size: 40px;
-                margin: -120px 0 0 780px;
-        }
 }
 @mixin heart{
         i{
@@ -144,35 +132,33 @@
                 }
 }
 @mixin validation-button{
-        .dish{
+        .dish{        
+                overflow: hidden;
+                &:hover>.validation-button{
+                animation: validation 500ms ease-in-out;
+                animation-fill-mode: forwards;
+                }
+                &:hover>.validation-button>i{
+                animation: check-circle 500ms ease-in-out;
+                animation-fill-mode: forwards;
+                }
                 .validation-button{
-                        position: absolute;
-                        right: 0px;
-                        background-color: $primaire;
+                        float: right;
+                        position: relative;
+                        left: 70px;
+                        background-color: $tertiaire;
                         width: 0px;
                         height: 100%;
-                        display: flex;
-                        justify-content: center;
-                        right: 0px;
-                        margin-left: 300px;
-                        transform-origin: bottom;
-                        border-top-right-radius: 40px;
-                        border-bottom-right-radius: 40px;
-                        &:hover{
-                                animation: validation 500ms ease-in-out 500ms;
-                                }
                         i{
                         color: white;
                         transform: scale(0);
                         width: 180px;
                         height: 100%;
-                        font-size: 50px;
+                        padding: 50px 0;
+                        font-size: 5rem;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        &:hover{
-                                animation: check-circle 500ms ease-in-out 500ms;
-                                }
                         }
                 }
         }
