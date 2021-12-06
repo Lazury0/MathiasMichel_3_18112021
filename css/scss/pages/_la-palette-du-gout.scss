@@ -42,7 +42,9 @@ header img{
         .price{
                 font-weight: 600;
                 font-size: 40px;
-                float: right;
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 40px;
         }
         @include menu-card
     }

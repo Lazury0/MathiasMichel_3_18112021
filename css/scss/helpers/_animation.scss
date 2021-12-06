@@ -220,9 +220,10 @@
 }
 @keyframes check-circle {
     0%{
-        transform: rotate(360deg)scale(0);
+        transform: rotate(-280deg);
     }
     100%{
-        transform: rotate(0deg)scale(1);;
+        transform: rotate(0deg);
+        width:180px;
     }
 }

@@ -70,6 +70,7 @@
         top: -20px; 
 }
 @mixin menu-card{
+        display: flex;
         cursor: pointer;
         position: relative;
         background-color: #fff;
@@ -143,16 +144,17 @@
                 animation-fill-mode: forwards;
                 }
                 .validation-button{
-                        float: right;
+                        display: flex;
+                        justify-content: flex-end;
                         position: relative;
-                        left: 70px;
+                        left: 170px;
                         background-color: $tertiaire;
                         width: 0px;
                         height: 100%;
                         i{
                         color: white;
                         transform: scale(0);
-                        width: 180px;
+                        width: 0px;
                         height: 100%;
                         padding: 50px 0;
                         font-size: 5rem;
