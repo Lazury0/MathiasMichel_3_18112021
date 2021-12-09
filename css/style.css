@@ -822,6 +822,11 @@ footer ul .fa-hands-helping {
           animation: menu 800ms 300ms ease-in-out backwards;
 }
 
+.menu :nth-child(4) {
+  -webkit-animation: menu 800ms 400ms ease-in-out backwards;
+          animation: menu 800ms 400ms ease-in-out backwards;
+}
+
 .menu :nth-child(5) {
   -webkit-animation: menu 800ms 800ms ease-in-out backwards;
           animation: menu 800ms 800ms ease-in-out backwards;
@@ -852,41 +857,12 @@ footer ul .fa-hands-helping {
           animation: menu 800ms 1300ms ease-in-out backwards;
 }
 
-@-webkit-keyframes menu {
-  0% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes menu {
-  0% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-.dish {
-  overflow: hidden;
-}
-
 .dish:hover > .validation-button {
   -webkit-animation: validation 500ms ease-in-out;
           animation: validation 500ms ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  width: 179px;
 }
 
 .dish:hover > .validation-button > i {
@@ -897,27 +873,9 @@ footer ul .fa-hands-helping {
 }
 
 .dish .validation-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  position: relative;
-  left: 170px;
-  background-color: #99E2D0;
-  width: 0px;
-  height: 100%;
-}
-
-.dish .validation-button i {
-  color: white;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  width: 0px;
-  height: 100%;
-  padding: 50px 0;
-  font-size: 5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -927,18 +885,28 @@ footer ul .fa-hands-helping {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #99E2D0;
+  width: 0px;
+  -webkit-transition: width 1s ease 0s;
+  transition: width 1s ease 0s;
+  height: 100%;
 }
 
-@-webkit-keyframes validation {
-  100% {
-    width: 180px;
-  }
-}
-
-@keyframes validation {
-  100% {
-    width: 180px;
-  }
+.dish .validation-button i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  width: 180px;
+  height: 100%;
+  padding: 50px 0;
+  font-size: 5rem;
 }
 
 @-webkit-keyframes check-circle {
@@ -949,7 +917,6 @@ footer ul .fa-hands-helping {
   100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    width: 180px;
   }
 }
 
@@ -961,7 +928,6 @@ footer ul .fa-hands-helping {
   100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    width: 180px;
   }
 }
 
@@ -1015,11 +981,11 @@ header img {
 }
 
 .menu .dish {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
-  position: relative;
   background-color: #fff;
   width: 900px;
   height: auto;
@@ -1029,29 +995,33 @@ header img {
 }
 
 .menu .dish .menu-item {
-  padding: 30px;
+  margin: 30px;
 }
 
 .menu .dish .price {
   font-weight: 600;
   font-size: 40px;
+  word-break: keep-all;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 40px;
+  margin: 70px 41px 50px 0;
 }
 
 .menu .dish h3 {
   margin: 0;
   font-size: 50px;
+  max-width: 700px;
+  width: 700px;
   word-break: keep-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .menu .dish h4 {
   margin: 0;
+  max-width: 700px;
+  width: 700px;
   font-size: 40px;
   font-weight: 300;
   overflow: hidden;

@@ -70,23 +70,28 @@
         top: -20px; 
 }
 @mixin menu-card{
+        position: relative;
         display: flex;
         cursor: pointer;
-        position: relative;
         background-color: #fff;
         width: 900px;
         height: auto;
         min-height: 160px;
         border-radius: 40px;
         margin-bottom: 40px;
-        // gap: 70px;
         h3{
                 margin: 0;
                 font-size: 50px;
+                max-width: 700px;
+                width: 700px;
                 word-break: keep-all;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
         h4{
                 margin: 0;
+                max-width: 700px;
+                width: 700px;
                 font-size: 40px;
                 font-weight: 300;
                 overflow: hidden;
@@ -133,34 +138,35 @@
                 }
 }
 @mixin validation-button{
-        .dish{        
-                overflow: hidden;
+        .dish{ 
+                // overflow: hidden; 
                 &:hover>.validation-button{
                 animation: validation 500ms ease-in-out;
                 animation-fill-mode: forwards;
-                }
+                width: 179px; 
+        }
                 &:hover>.validation-button>i{
                 animation: check-circle 500ms ease-in-out;
                 animation-fill-mode: forwards;
                 }
                 .validation-button{
-                        display: flex;
-                        justify-content: flex-end;
-                        position: relative;
-                        left: 170px;
-                        background-color: $tertiaire;
-                        width: 0px;
-                        height: 100%;
-                        i{
-                        color: white;
-                        transform: scale(0);
-                        width: 0px;
-                        height: 100%;
-                        padding: 50px 0;
-                        font-size: 5rem;
+                        position: absolute;
+                        right: 0;top: 0;
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        background-color: $tertiaire;
+                        width: 0px;
+                        transition: width 1s ease 0s;                        height: 100%;
+                        i{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        width: 180px;
+                        height: 100%;
+                        padding: 50px 0;
+                        font-size: 5rem;
                         }
                 }
         }

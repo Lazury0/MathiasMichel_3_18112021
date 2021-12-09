@@ -176,9 +176,9 @@
     :nth-child(3){
     animation: menu 800ms 300ms ease-in-out backwards;
     }
-    // :nth-child(4){
-    // animation: menu 800ms 400ms ease-in-out backwards;
-    // }
+    :nth-child(4){
+    animation: menu 800ms 400ms ease-in-out backwards;
+    }
     :nth-child(5){
     animation: menu 800ms 800ms ease-in-out backwards;
     }
@@ -198,32 +198,32 @@
     animation: menu 800ms 1300ms ease-in-out backwards;
     }
 }
-@keyframes menu {
-    0% {
-      -webkit-transform: translateY(20px);
-      transform: translateY(20px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0px);
-      transform: translateY(0px);
-      opacity: 1;
-    }
-  }
+// @keyframes menu {
+//     0% {
+//       -webkit-transform: translateY(20px);
+//       transform: translateY(20px);
+//       opacity: 0;
+//     }
+//     100% {
+//       -webkit-transform: translateY(0px);
+//       transform: translateY(0px);
+//       opacity: 1;
+//     }
+//   }
 //   Validation boutton
 @include validation-button;
 
-@keyframes validation {
-    100%{
-        width:180px;
-    }
-}
+// @keyframes validation {
+//       100% {
+//         opacity: 1;
+//         transform: translateX(-180px);
+//       }
+//     }
 @keyframes check-circle {
     0%{
         transform: rotate(-280deg);
     }
     100%{
         transform: rotate(0deg);
-        width:180px;
     }
 }

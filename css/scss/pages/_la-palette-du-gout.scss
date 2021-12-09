@@ -37,14 +37,14 @@ header img{
 
     .dish{
         .menu-item{
-            padding: 30px;
+            margin: 30px;
         }
         .price{
                 font-weight: 600;
                 font-size: 40px;
+                word-break: keep-all;
                 display: flex;
-                justify-content: flex-end;
-                margin-right: 40px;
+                margin: 70px 41px 50px 0;
         }
         @include menu-card
     }
