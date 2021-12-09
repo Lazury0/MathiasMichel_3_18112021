@@ -2,13 +2,12 @@
 @import "./scss/layout/header";
 @import "./scss/layout/body";
 @import "./scss//layout/menu-restaurant";
+@import "./scss/layout/loading-screen";
 @import "./scss/layout/footer";
 @import "./scss/components/buttons";
 @import "./scss/components/title";
 @import "./scss/helpers/functions";
 @import "./scss/helpers/mixins";
 @import "./scss/helpers/animation";
-// @import "./scss/pages/a-la-francaise";
-// @import "./scss/pages/la-note-enchantee";
-@import "./scss/pages/la-palette-du-gout";
-// @import "./scss/pages//le-delice-des-sens";
+@import "./scss/helpers/animation";
+@import "./scss/pages/menus";
