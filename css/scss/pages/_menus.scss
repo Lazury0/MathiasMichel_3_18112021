@@ -29,22 +29,26 @@ header img{
         padding: 80px 0 0 50px;
     }
     h2{
-        @include sub-menu
+        @include sub-menu;
     }
     hr{
-        @include hr
+        @include hr;
     }
 
     .dish{
         .menu-item{
             margin: 30px;
+            h3,h4{
+                word-wrap:break-word;
+                transition: all ease-out 300ms;
+            }
         }
         .price{
                 font-weight: 600;
                 font-size: 40px;
                 word-break: keep-all;
                 display: flex;
-                margin: 70px 41px 50px 0;
+                margin: 90px 41px 0px 10px;
         }
         @include menu-card
     }

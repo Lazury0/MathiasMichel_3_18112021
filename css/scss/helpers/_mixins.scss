@@ -82,16 +82,17 @@
         h3{
                 margin: 0;
                 font-size: 50px;
-                max-width: 700px;
-                width: 700px;
+                max-width: 715px;
+                width: 715px;
+                overflow: hidden;
                 word-break: keep-all;
-                white-space: nowrap;
+                white-space: normal;
                 text-overflow: ellipsis;
             }
         h4{
                 margin: 0;
-                max-width: 700px;
-                width: 700px;
+                max-width: 715px;
+                width: 715px;
                 font-size: 40px;
                 font-weight: 300;
                 overflow: hidden;
@@ -139,15 +140,21 @@
 }
 @mixin validation-button{
         .dish{ 
-                // overflow: hidden; 
+                overflow: hidden; 
                 &:hover>.validation-button{
-                animation: validation 500ms ease-in-out;
-                animation-fill-mode: forwards;
-                width: 179px; 
-        }
+               width: 179px; 
+                }
+                &:hover>.menu-item>h4{
+                width: 560px;
+                transition: all ease-out 300ms;
+                }
+                &:hover>.menu-item>h3{
+                width: 560px;
+                transition: all ease-out 300ms;
+                }
                 &:hover>.validation-button>i{
-                animation: check-circle 500ms ease-in-out;
-                animation-fill-mode: forwards;
+                transform: rotate(0);
+                transition: all ease-out 300ms;
                 }
                 .validation-button{
                         position: absolute;
@@ -157,7 +164,8 @@
                         justify-content: center;
                         background-color: $tertiaire;
                         width: 0px;
-                        transition: width 1s ease 0s;                        height: 100%;
+                        transition: width 300ms ease 0s;                        
+                        height: 100%;
                         i{
                         display: flex;
                         align-items: center;
@@ -167,7 +175,15 @@
                         height: 100%;
                         padding: 50px 0;
                         font-size: 5rem;
+                        transform: rotate(-360deg);
+                        transition: all ease-out 300ms;
                         }
                 }
         }
+}
+@mixin media-queries {
+                width: 100%;
+                height: 300px;
+                background-position: 0 -100px;
+        
 }

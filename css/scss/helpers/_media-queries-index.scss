@@ -1,0 +1,136 @@
+@media screen and (min-width: 993px) {
+    // header
+    .title h1{
+        margin: 0;
+    }
+    .search {
+        height: 100px;
+        input{
+        font-size: 30px;
+        }
+    }
+    .explore{
+        padding: 0 0 40px 0;
+        h2{
+            font-size: 30px;
+            margin-top: 50px;
+        }
+        p{
+            font-size: 25px;
+            margin: 30px 0;
+        }
+        button{
+            font-size: 30px;
+            height: 100px;
+            width: 400px;
+        }
+    }
+    // Fonctionnement
+    .functioning{
+        margin-top: 50px;
+        h2{
+            font-size: 40px;
+        }
+        ul{
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            li{
+                margin: 10px 25px 10px 25px;
+                font-size: 20px;
+                height: 70px;
+                width: 100%;
+                &:before{
+                    font-size: 20px!important;
+                    width: 25px!important;
+                    height: 25px!important;
+                    margin: 0px!important;
+                    left: -10px!important;
+                    top: 25px;
+                }
+                i{
+                    font-size: 25px;
+                    width: 15px;
+                }
+            }
+        }
+    }
+    // menu restaurant
+    .menu-restaurant{
+        margin-top: 50px;
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        h2{
+            font-size: 40px;
+            width: 100%;
+        }
+        .card-menu{
+            margin: 0;
+            padding: 5px 0 10px 5px;
+            width: 400px;
+            // height: 100%;
+            .card-bottom{
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                height: 100px;
+                position: relative;
+                top: 201px;
+                h3{
+                    font-size: 25px;
+                    padding: 0;
+                    margin: 10px 0 5px 15px;
+                }
+                p{
+                    font-size: 25px;
+                    padding: 0;
+                    margin: 0 15px;
+                }
+            }
+            i{
+                margin: 4.5em 0 0 5em;
+                font-size: 50px
+            }
+            .menilmontant {
+                @include media-queries;
+                &:after{
+                    width: 80px;
+                    height: 20px;
+                    font-size: 20px;
+                    position: relative;
+                    top: -240px;
+                    left: 130px;
+                    background-color: #99E2D0;
+                    color: #008766;
+                    padding: 10px 10px 10px 10px;
+                    font-weight: 500;
+                    border-radius: 5px;
+                }
+            }
+            .charonne{
+                @include media-queries;
+                &:after{
+                    width: 80px;
+                    height: 20px;
+                    font-size: 20px;
+                    position: relative;
+                    top: -240px;
+                    left: 130px;
+                    background-color: #99E2D0;
+                    color: #008766;
+                    padding: 10px 10px 10px 10px;
+                    font-weight: 500;
+                    border-radius: 5px;
+                }
+            }
+            .cite-rouge{
+                @include media-queries
+            }
+            .folie-mericourt{
+                @include media-queries
+            }
+        }
+    }
+    }

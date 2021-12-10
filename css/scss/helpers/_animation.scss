@@ -128,18 +128,3 @@
 //   }
 //   Validation boutton
 @include validation-button;
-
-// @keyframes validation {
-//       100% {
-//         opacity: 1;
-//         transform: translateX(-180px);
-//       }
-//     }
-@keyframes check-circle {
-    0%{
-        transform: rotate(-280deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
