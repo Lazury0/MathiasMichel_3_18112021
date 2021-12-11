@@ -114,18 +114,18 @@
     animation: menu 800ms 1300ms ease-in-out backwards;
     }
 }
-// @keyframes menu {
-//     0% {
-//       -webkit-transform: translateY(20px);
-//       transform: translateY(20px);
-//       opacity: 0;
-//     }
-//     100% {
-//       -webkit-transform: translateY(0px);
-//       transform: translateY(0px);
-//       opacity: 1;
-//     }
-//   }
+@keyframes menu {
+    0% {
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
 //   Validation boutton
 @include validation-button;
 

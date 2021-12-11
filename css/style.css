@@ -855,6 +855,32 @@ footer ul .fa-hands-helping {
           animation: menu 800ms 1300ms ease-in-out backwards;
 }
 
+@-webkit-keyframes menu {
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes menu {
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 .dish .validation-button {
   position: absolute;
   right: 0;
@@ -1063,6 +1089,12 @@ header img {
   box-shadow: 0px 10px 23px 4px rgba(0, 0, 0, 0.27);
 }
 
+.menu button:hover {
+  background: #f8c9ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8c9ff), to(#c270ab));
+  background: linear-gradient(180deg, #f8c9ff 0%, #c270ab 100%);
+}
+
 @media screen and (min-width: 993px) {
   .title h1 {
     margin: 0;
@@ -1086,8 +1118,13 @@ header img {
   }
   .explore button {
     font-size: 30px;
-    height: 100px;
+    height: 70px;
     width: 400px;
+  }
+  .explore button:hover {
+    background: #f8c9ff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f8c9ff), to(#c270ab));
+    background: linear-gradient(180deg, #f8c9ff 0%, #c270ab 100%);
   }
   .functioning {
     margin-top: 50px;
@@ -1168,8 +1205,8 @@ header img {
     margin: 0 15px;
   }
   .menu-restaurant .card-menu i {
-    margin: 4.5em 0 0 5em;
-    font-size: 50px;
+    margin: 5.5em 0 0 6em;
+    font-size: 40px;
   }
   .menu-restaurant .card-menu .menilmontant {
     width: 100%;

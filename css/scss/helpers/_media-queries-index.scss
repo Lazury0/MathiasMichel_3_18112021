@@ -21,9 +21,13 @@
         }
         button{
             font-size: 30px;
-            height: 100px;
+            height: 70px;
             width: 400px;
+        &:hover{
+            background: rgb(248,201,255);
+            background: linear-gradient(180deg, rgba(248,201,255,1) 0%, rgba(194,112,171,1) 100%);
         }
+    }
     }
     // Fonctionnement
     .functioning{
@@ -70,7 +74,6 @@
             margin: 0;
             padding: 5px 0 10px 5px;
             width: 400px;
-            // height: 100%;
             .card-bottom{
                 display: flex;
                 flex-direction: column;
@@ -90,8 +93,8 @@
                 }
             }
             i{
-                margin: 4.5em 0 0 5em;
-                font-size: 50px
+                margin: 5.5em 0 0 6em;
+                font-size: 40px
             }
             .menilmontant {
                 @include media-queries;
