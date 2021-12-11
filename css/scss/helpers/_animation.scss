@@ -128,3 +128,29 @@
 //   }
 //   Validation boutton
 @include validation-button;
+
+.dish{ 
+    overflow: hidden; 
+    &:hover>.validation-button{
+   width: 179px; 
+    }
+    &:hover>.menu-item>h4{
+    width: 560px;
+    transition: all ease-out 300ms;
+    }
+    &:hover>.menu-item>h3{
+    width: 560px;
+    transition: all ease-out 300ms;
+    }
+    &:hover>.validation-button>i{
+    transform: rotate(0);
+    transition: all ease-out 300ms;
+    }
+    .validation-button{
+    transition: width 300ms ease 0s;                        
+    }
+    i{
+    transform: rotate(-360deg);
+    transition: all ease-out 300ms;
+    }
+}

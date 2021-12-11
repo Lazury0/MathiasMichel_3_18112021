@@ -139,23 +139,7 @@
                 }
 }
 @mixin validation-button{
-        .dish{ 
-                overflow: hidden; 
-                &:hover>.validation-button{
-               width: 179px; 
-                }
-                &:hover>.menu-item>h4{
-                width: 560px;
-                transition: all ease-out 300ms;
-                }
-                &:hover>.menu-item>h3{
-                width: 560px;
-                transition: all ease-out 300ms;
-                }
-                &:hover>.validation-button>i{
-                transform: rotate(0);
-                transition: all ease-out 300ms;
-                }
+        .dish{
                 .validation-button{
                         position: absolute;
                         right: 0;top: 0;
@@ -164,7 +148,6 @@
                         justify-content: center;
                         background-color: $tertiaire;
                         width: 0px;
-                        transition: width 300ms ease 0s;                        
                         height: 100%;
                         i{
                         display: flex;
@@ -175,8 +158,6 @@
                         height: 100%;
                         padding: 50px 0;
                         font-size: 5rem;
-                        transform: rotate(-360deg);
-                        transition: all ease-out 300ms;
                         }
                 }
         }

@@ -342,8 +342,6 @@
   position: relative;
   top: -200px;
   font-family: "Shrikhand", serif;
-  color: white;
-  -webkit-text-stroke: 1px black;
 }
 
 .loading span {
@@ -857,6 +855,41 @@ footer ul .fa-hands-helping {
           animation: menu 800ms 1300ms ease-in-out backwards;
 }
 
+.dish .validation-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #99E2D0;
+  width: 0px;
+  height: 100%;
+}
+
+.dish .validation-button i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  width: 180px;
+  height: 100%;
+  padding: 50px 0;
+  font-size: 5rem;
+}
+
 .dish {
   overflow: hidden;
 }
@@ -885,40 +918,11 @@ footer ul .fa-hands-helping {
 }
 
 .dish .validation-button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #99E2D0;
-  width: 0px;
   -webkit-transition: width 300ms ease 0s;
   transition: width 300ms ease 0s;
-  height: 100%;
 }
 
-.dish .validation-button i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
-  width: 180px;
-  height: 100%;
-  padding: 50px 0;
-  font-size: 5rem;
+.dish i {
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
   -webkit-transition: all ease-out 300ms;
@@ -1046,7 +1050,6 @@ header img {
 
 .menu button {
   cursor: pointer;
-  margin: 50px 0 200px 0;
   color: white;
   font-weight: 400;
   font-size: 45px;
@@ -1237,15 +1240,34 @@ header img {
     top: -400px;
   }
   .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 80%;
     margin: auto;
     margin-top: -870px;
+    height: 100%;
+    border-radius: 50px;
+    margin-bottom: 25px;
   }
   .menu h1 {
+    margin: 10px 0 1px 0;
+    padding: 40px 0 0 50px;
     font-size: 35px;
   }
+  .menu hr {
+    width: 120px;
+    top: 0;
+    right: -25px;
+  }
   .menu h2 {
-    font-size: 30px;
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
   }
   .menu .sub-card {
     -ms-flex-wrap: wrap;
@@ -1254,15 +1276,72 @@ header img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 15%;
+    width: 100%;
   }
   .menu .sub-card .dish {
+    margin: 10px 0;
     width: 450px;
-    height: 40px;
+    min-height: 80px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .menu .sub-card .dish .price {
+    font-size: 22px;
+    margin: 35px 0 0 0;
+    -webkit-transition: all ease-out 250ms;
+    transition: all ease-out 250ms;
+  }
+  .menu .sub-card .dish .menu-item {
+    margin: 10px 0 0 15px;
+    width: 370px;
   }
   .menu .sub-card .dish .menu-item h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .menu .sub-card .dish .menu-item h4 {
+    margin-top: 3px;
+    font-size: 18px;
+  }
+  .menu .sub-card .dish i {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    font-size: 3rem;
+  }
+  .menu .sub-card .dish:hover > .validation-button {
+    width: 100px;
+  }
+  .menu .sub-card .dish:hover > .menu-item > h4 {
+    width: 270px;
+    -webkit-transition: all ease-out 250ms;
+    transition: all ease-out 250ms;
+  }
+  .menu .sub-card .dish:hover > .menu-item > h3 {
+    width: 270px;
+    -webkit-transition: all ease-out 250ms;
+    transition: all ease-out 250ms;
+  }
+  .menu .sub-card .dish:hover > .price {
+    -webkit-transform: translateX(-90px);
+            transform: translateX(-90px);
+  }
+  .menu button {
+    width: 230px;
+    height: 60px;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  footer {
+    height: 310px;
+    padding-left: 0;
+  }
+  footer ul {
     font-size: 25px;
   }
 }

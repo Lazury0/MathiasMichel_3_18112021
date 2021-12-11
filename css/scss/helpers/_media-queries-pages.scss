@@ -20,36 +20,94 @@ header{
     }
 }
 .menu{
+    display: flex;
+    flex-direction: column;
     width: 80%;
     margin: auto;
     margin-top: -870px;
+    height: 100%;
+    border-radius: 50px;
+    margin-bottom: 25px;
     h1{
+        margin: 10px 0 1px 0;
+        padding: 40px 0 0 50px ;
         font-size: 35px;
     }
+    hr{
+        width: 120px;
+        top: 0;right: -25px;
+    }
     h2{
-        font-size: 30px;
+        font-size: 25px;
+        margin: 0;
+        text-align: center;
     }
     .sub-card{
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: space-evenly;
+        height: 15%;
+        width: 100%;
         .dish{
+            margin: 10px 0;
             width: 450px;
-            height: 40px; 
+            min-height: 80px;
+            border-radius: 20px;
+            .price{
+                font-size: 22px;
+                margin: 35px 0 0 0;
+                transition: all ease-out 250ms;
+            }
             .menu-item{
+                margin: 10px 0 0 15px;
+                width: 370px;
                 h3{
-                    font-size: 25px;
+                    font-size: 20px;
                 }
                 h4{
-                    font-size: 25px;
+                    margin-top: 3px;
+                    font-size: 18px;
                 }
-            }           
+            }
+            i{
+                width: 30px;
+                height: 30px;
+                padding: 0;
+                font-size: 3rem;
+            }  
+            overflow: hidden; 
+            &:hover>.validation-button{
+            width: 100px; 
+            }
+            &:hover>.menu-item>h4{
+            width: 270px;
+            transition: all ease-out 250ms;
+            }
+            &:hover>.menu-item>h3{
+            width: 270px;
+            transition: all ease-out 250ms;
+            }
+            &:hover>.price{
+                transform: translateX(-90px); 
+            }
         }
     }
+    button{
+        width: 230px;
+        height: 60px;
+        font-size: 30px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
 }
+footer{
+    height: 310px;
+    padding-left: 0;
+    ul{
+        font-size: 25px;
+    }
 
-
-
-
-
+}
 
 }
