@@ -132,7 +132,7 @@
 .dish{ 
     overflow: hidden; 
     &:hover>.validation-button{
-   width: 179px; 
+   transform: translateX(-179px); 
     }
     &:hover>.menu-item>h4{
     width: 560px;
@@ -147,7 +147,7 @@
     transition: all ease-out 300ms;
     }
     .validation-button{
-    transition: width 300ms ease 0s;                        
+    transition: all 300ms ease 0s;                        
     }
     i{
     transform: rotate(-360deg);

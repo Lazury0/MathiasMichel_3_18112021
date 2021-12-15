@@ -1,4 +1,7 @@
 @import "./scss/base/typography";
+@import "./scss/helpers/mixins";
+@import "./scss/helpers/functions";
+@import "./scss/helpers/animation";
 @import "./scss/layout/header";
 @import "./scss/layout/body";
 @import "./scss//layout/menu-restaurant";
@@ -6,9 +9,6 @@
 @import "./scss/layout/footer";
 @import "./scss/components/buttons";
 @import "./scss/components/title";
-@import "./scss/helpers/functions";
-@import "./scss/helpers/mixins";
-@import "./scss/helpers/animation";
 @import "./scss/pages/menus";
 @import "./scss/helpers/media-queries-index";
 @import "./scss/helpers/media-queries-pages";
